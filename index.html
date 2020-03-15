@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Scott Penneman's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+    <!-- <div class="logo">
+      <img src="data:image/png;base64,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" alt="Logo">
+    </div> -->
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#services" class="nav__link">What I Do</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+        <li class="nav__item"><a href="#work" class="nav__link">My Progress</a></li>
+      </ul>
+    </nav>
+</header>
+
+<section class="intro" id="home">
+  <h1 class="section__title section__title--intro">
+    Hello! I am <strong>Scott Penneman</strong>
+  </h1>
+  <p class="section__subtitle section__subtitle--intro">
+    Full Stack Web Developer
+  </p>
+    <img src="images/scott1.jpg" alt="Photo of the author, Scott Penneman, at Boulevard Brewery in Kansas City" class="intro__img">
+</section>
+
+<section class="my-service" id="services">
+  <h2 class="section__title section__title--services">What I Do</h2>
+  <div class="services">
+
+    <div class="service">
+      <h3>Solution Thinker</h3>
+      <p>One of my mantras is to think in solutions. Whenever I'm presented with a problem, 
+        I immediately begin thinking of the solution. Let's solve this problem together!</p>
+    </div>
+
+    <div class="service">
+      <h3>Accessibility Focused</h3>
+      <p>My father is experiencing early onset dementia, and my grandfather is legally blind. 
+        Technology is still a huge part of their lives. I see their struggles and it leads me 
+        to focus on accessibility for everyone.</p>
+    </div>
+
+    <div class="service">
+      <h3>Experience Expert</h3>
+      <p>I have learned how important customer experience is through many years of retail and 
+        insurance service experience. I am now bringing that expertise to web as I know how 
+        important every facet of customer interactions are.
+      </p>
+    </div>
+  </div>
+  <a href="#work" class="btn">My Work</a>
+</section> 
+
+<section class="about-me" id="about">
+    <h2 class="section__title section__title--about">Who I Am</h2>
+    <p class="section__subtitle section__subtitle--about">Developer in Kansas City</p>
+
+    <div class="about-me__body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <img src="images/scott2.jpg" alt="Photo of the author, Scott Penneman, backpacking in the woods" class="about-me__img">
+</section>
+
+<section class="my-work" id="work">
+  <h2 class="section__title">My Progress</h2>
+  <p class="section__subtitle">The steps I've taken to achieve my goal</p>
+
+  <div class="portfolio">
+    <a href="portfolio-item.html" class="portfolio__item">
+      <img src="images/project1.jpg" alt="" class="portfolio__img">
+    </a>
+
+    <a href="portfolio-item.html" class="portfolio__item">
+      <img src="images/project2.jpg" alt="" class="portfolio__img">
+    </a>
+
+    <a href="portfolio-item.html" class="portfolio__item">
+      <img src="images/project3.jpg" alt="" class="portfolio__img">
+    </a>
+  </div>
+</section>
+
+<footer class="footer">
+  <a href="mailto:scott.penneman@gmail.com" class="footer__link">scott.penneman@gmail.com</a>
+  <ul class="social-list">
+    <li class="social-list__item">
+      <a class="social-list__link" href="https://github.com/scottpenneman">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+    <li class="social-list__item">
+      <a class="social-list__link" href="https://www.linkedin.com/in/scottpenneman/">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </li>
+  </ul>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html> 
